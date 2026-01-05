@@ -9,3 +9,7 @@ git status
 git add .
 git commit -m "Day 003: recursion basics"
 git push
+
+
+g++ filename.cpp
+.\ filename
