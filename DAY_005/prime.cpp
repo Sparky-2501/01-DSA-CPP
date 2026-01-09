@@ -18,7 +18,5 @@ int main(){
         }
     }
     (isPrime) ? cout << num << " is a prime number." << endl : cout << num << " is not a prime number." << endl;
-    
-
     return 0;
 }
