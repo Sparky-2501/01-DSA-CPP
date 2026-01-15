@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+/*
+1 
+0 1 
+0 1 0 
+1 0 1 0 
+1 0 1 0 1
+*/
+    bool odd = true;
+    int n=4;
+    for(int i=0 ; i<=n ; i++){
+        for(int j=0  ; j<=i ; j++){
+            cout<<odd<<" ";
+            odd = !odd;
+        }
+        cout<<endl;
+    }
+    
+
+    return 0;
+}
