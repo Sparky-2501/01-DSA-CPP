@@ -30,7 +30,7 @@ int main() {
         for(int j =1 ; j<=i ; j++){
             cout<<"* ";
         }
-        for(int j = 1 ; j<= ((n-i+1)*2-2) ; j++){
+        for(int j = 1 ; j<= 2*(n-i) ; j++){
             cout<<"  ";
         }
         for(int j =1 ; j<=i ; j++){
