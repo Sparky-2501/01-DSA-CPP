@@ -29,14 +29,8 @@ int main()
     int key = 56;
     int size = sizeof(arr) / sizeof(arr[0]);
     int result = binary_search(arr, size,key);
-    if (result == -1)
-    {
-        cout << "not found";
-    }
-    else
-    {
-        cout << "found at index :" << result;
-    }
+    (result == -1 ? cout << "not found" :  cout << "found at index :" << result);
+
     return 0;
 }
 
