@@ -39,3 +39,9 @@ int main()
     }
     return 0;
 }
+
+//ptr ++ to print the nxt digit but in memory it travel to size of int {4 locations}.
+//no sense in addding 2 ptrs.
+// ptr 1 + ptr2 not meaningful
+//ptr1 - ptr2 in some cases ok
+// can be used as ptr1 > ptr2 ? 
