@@ -2,7 +2,8 @@
 using namespace std;
 
 void bruteforce(int *arr,int n){
-    int maxSum =0;
+    int maxSum =INT_MIN;
+    //maxsum = int_min - infinity 
     for(int i = 0 ; i < n ; i++){
         for(int j = i ; j < n ; j++){
             int currSum = 0;
