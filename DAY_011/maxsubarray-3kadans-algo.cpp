@@ -13,14 +13,19 @@ void kadane(int *arr, int n)
         {
             currSum = 0;
         }
+        //we reset the currsum later for edge cases like all negative elements 
     }
     cout << "max subarray sum is :" << maxSum << "\n";
 }
 
 int main()
 {
-    int arr[6] = {2, -3, 6, -5, 4, 2};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    kadane(arr, size);
+    int positivearr[6] = {2, 1, 6, -5, -4, 2};
+    int negativearr[6] = {-2, -1, -6, -5, -4, -2};
+    int size1 = sizeof(positivearr) / sizeof(positivearr[0]);
+    int size2 = sizeof(negativearr) / sizeof(negativearr[0]);
+    
+    kadane(positivearr, size1);
+    kadane(negativearr, size2);
     return 0;
 }
