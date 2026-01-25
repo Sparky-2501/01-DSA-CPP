@@ -11,7 +11,6 @@ void bruteforce(int *arr,int n){
         }   
     }
     cout <<"max subarray sum is :" << maxSum<< "\n";
-
 }
 
 int main() {
