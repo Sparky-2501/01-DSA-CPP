@@ -10,6 +10,15 @@ void call(int *heights,int n){
         leftmax[i]= max(leftmax[i-1],heights[i-1]);
         cout<<leftmax[i]<<" ";
     }
+    
+    int righttmax[n];
+    righttmax[n-1]=INT_MIN;
+    cout<<righttmax[n-1]<<" ";
+
+    for(int i=n-2 ; i>=0 ; i--){
+        righttmax[i]= max(righttmax[i+1],heights[i+1]);
+        cout<<righttmax[i]<<" ";
+    }
 }
 
 int main() {
