@@ -5,7 +5,6 @@ void call(int *heights,int n){
     int leftmax[n];
     leftmax[0]=INT_MIN;
     //cout<<leftmax[0]<<" ";
-    
     for(int i=1 ; i< n ; i++){
         leftmax[i]= max(leftmax[i-1],heights[i-1]);
         // cout<<leftmax[i]<<" ";
@@ -14,11 +13,11 @@ void call(int *heights,int n){
     int righttmax[n];
     righttmax[n-1]=INT_MIN;
     //cout<<righttmax[n-1]<<" ";
-
     for(int i=n-2 ; i>=0 ; i--){
         righttmax[i]= max(righttmax[i+1],heights[i+1]);
         // cout<<righttmax[i]<<" ";
     }
+
     int trappedwater=0;
     for(int i=0 ; i< n ; i++){
         int waterlevel= min(leftmax[i],righttmax[i]);
