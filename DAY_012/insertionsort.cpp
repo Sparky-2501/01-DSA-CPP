@@ -1,10 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    //insertionsort
-    int arr[] = {5, 1, 4, 2, 8,12,67,45,23,90,67};
-    int n = sizeof(arr)/sizeof(arr[0]);
+int insertionsort(int arr[],int n){
     for(int i=1 ; i<n ; i++){
         int key = arr[i];
         int j = i-1;
@@ -17,5 +14,13 @@ int main() {
     for(int i=0 ; i<n ; i++){
         cout<<arr[i]<<" ";
     }
+}
+
+
+int main() {
+    //insertionsort
+    int arr[] = {5, 1, 4, 2, 8,12,67,45,23,90,67};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    insertionsort(arr,n);
     return 0;
 }
