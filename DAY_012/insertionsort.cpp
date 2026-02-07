@@ -21,7 +21,6 @@ int insertionsort(int arr[],int n){
     }
 }
 
-
 int main() {
     //insertionsort
     int arr[] = {5, 1, 4, 2, 8,12,67,45,23,90,67};
