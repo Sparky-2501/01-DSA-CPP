@@ -14,7 +14,7 @@ void SpiralMatrix(int arr[][3], int n, int m)
         srow++;
 
         // right column
-        for (int i = srow; i <= erow; i++)
+        for (int i = srow; i <= erow; i++ )
             cout << arr[i][ecol] << " ";
         ecol--;
 
