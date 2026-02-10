@@ -15,7 +15,5 @@ int main() {
         }
         cout<< endl;
     }
-    cout << arr;
-    
     return 0;
 }
