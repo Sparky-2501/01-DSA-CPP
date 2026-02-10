@@ -53,6 +53,8 @@ int main()
                      {11, 12, 13, 14},
                      {21, 22, 23, 24},
                      {31, 32, 33, 34}};
-    search1(arr, 4, 4);
+    search1(arr, 4, 4);  //o(n^2)
+    search2(arr, 4, 4); //O(n+m)
     return 0;
 }
+ 
