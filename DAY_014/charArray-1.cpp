@@ -13,10 +13,22 @@ int main()
     //  'a' => 97
     //  'A' => 65
 //CHARACTER ARRAY
+        //int arr prints the starting address of array but in char it print actual data 
         char str[6] = {'a','b','c','d','e'};
         cout << str << "\n";
         
         char arr[10] = {'c','o', 'd' , 'e' , '\0'};
         cout << arr << "\n";
+
+        // string literals & length;
+        char ch = "code";
+        char ch[5] = "code";
+        cout << ch << "\n" ;
+        cout << strlen(ch) << "\n";
+
+        // for input string cin ignores the whitespaces so we use cin.getline('sentence', length);
+        char st[30];
+        cin.getline(st,30);
+        cout<< st;
     return 0;
 }
