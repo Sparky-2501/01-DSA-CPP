@@ -30,5 +30,9 @@ int main()
         char st[30];
         cin.getline(st,30);
         cout<< st;
+
+        cin.getline(st,30,'.');
+        //stop at '.'
+        
     return 0;
 }
