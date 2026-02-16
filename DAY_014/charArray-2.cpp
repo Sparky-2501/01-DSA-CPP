@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    // to uppercase
     char word[] = "AppLe";
     
     for(int i=0 ; i<strlen(word) ; i++){
