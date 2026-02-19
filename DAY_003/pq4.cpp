@@ -22,7 +22,7 @@ int main(){
                 cout<<a/b<<endl;
             }
             else{
-                cout<<"division by zero is not allowed"<<endl;
+                cout<<"division by zero is not possible"<<endl;
             }
         break;
         default: cout<<"invalid operation selected"<<endl;
