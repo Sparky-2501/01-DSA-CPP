@@ -11,7 +11,6 @@ int dectobinary(int num){
         pow = pow*2;        // pow = 4
         n=n/10;     //1
     }
-
     return bin;
 }
 
