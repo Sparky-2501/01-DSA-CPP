@@ -17,7 +17,9 @@ int main(){
 }
 
 /*
-    static           | dynamic
-    compile time     | runtime
-    int arr[100];    | int * arr = new int[size];
+    |              static                 |                dynamic
+    compile time                          | runtime
+    int arr[100];                         | int * arr = new int[size];
+    arr in stack                          | arr in heap
+    after func call delete from memory    | after func call ptr delets but not arr so causes memory leak
 */
