@@ -14,4 +14,10 @@ int main(){
         x++;
     }
         return 0;
-    }
+}
+
+/*
+    static           | dynamic
+    compile time     | runtime
+    int arr[100];    | int * arr = new int[size];
+*/
