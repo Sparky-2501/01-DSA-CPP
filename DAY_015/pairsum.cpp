@@ -32,6 +32,5 @@ int main()
     int target = 9;
     vector<int> ans = pairSum(vec, target);
     cout << ans[0] << "," << ans[1] << endl;
-    ;
     return 0;
 }
