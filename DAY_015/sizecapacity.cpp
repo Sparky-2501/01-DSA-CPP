@@ -13,8 +13,8 @@ int main() {
 /*
 i   size   capacity
 0   1      1    |1|
-1   2      2    |1|2|  {if full doub}
+1   2      2    |1|2|  {if full doubles the capacity}
 2   3      4    |1|2|3|_|
-3   4      4    |1|2|3|4|
+3   4      4    |1|2|3|4|   {if full doubles the capacity}
 4   5      10   |1|2|3|4|5|_|_|_|_|_|
 */
