@@ -16,10 +16,5 @@ int main()
     //        cout<< i << ":" << ~i << " \n";
     //    }
 
-    cout << sizeof(int) << endl;
-    for (int i = 0; i < 8 * sizeof(int); i++)
-    {
-        cout << (i> ~i)<< " \n";
-    }
     return 0;
 }
