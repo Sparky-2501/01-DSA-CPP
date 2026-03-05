@@ -1,18 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
     /*
     binary not operator
     ~1 = 0
     ~0 = 1
     ~5 = ~(0000 0101) = 1111 1010 = -6
     */
-//    int num=5;
-//    cout<< ~num<<endl;
+    //    int num=5;
+    //    cout<< ~num<<endl;
 
-   for(int i = 0 ; i<5 ; i++){
-       cout<< i << ":" << ~i << " \n";
-   }
+    //    for(int i = 0 ; i<5 ; i++){
+    //        cout<< i << ":" << ~i << " \n";
+    //    }
+
+    cout << sizeof(int) << endl;
+    for (int i = 0; i < 8 * sizeof(int); i++)
+    {
+        cout << (i> ~i)<< " \n";
+    }
     return 0;
 }
