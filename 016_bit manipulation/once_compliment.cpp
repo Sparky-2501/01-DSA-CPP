@@ -16,5 +16,8 @@ int main()
     //        cout<< i << ":" << ~i << " \n";
     //    }
 
+    //MSB=>1 negative number
+    //MSB=>0 positive number
+    
     return 0;
 }
