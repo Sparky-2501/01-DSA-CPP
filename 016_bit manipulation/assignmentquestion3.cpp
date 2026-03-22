@@ -4,7 +4,8 @@ using namespace std;
 int main() {
 // count set bit:
 
-    int n = 10;
+    int n;
+    cin >> n;
     int count =0;
     while(n>0){
         int dig = n & 1;  //1010 & 0001 =0
