@@ -2,12 +2,21 @@
 using namespace std;
 
 int main() {
+   /*
+APPROACH 1:
+
     int n=7,dig=2;
 
     for(int i=0 ; i < dig ; i++){
         n = n & ~(1 << i);
     }
     cout << n << endl;
+
+   */
+//APPROACH 2:
+    int n=7,dig=2;
+    n = n & (~0 << dig);
+    cout << n<<endl;
     return 0;
 }
 
