@@ -4,9 +4,9 @@ using namespace std;
 int main() {
     //bit masking => getting specific bit from the number
     //n&1 => getting last bit
-    //n&2 => getting 2nd last bit
-    //n&4 => getting 3rd last bit
-    //n&8 => getting 4th last bit
+    //n&(1<<1) => getting 2nd last bit
+    //n&(1<<2) => getting 3rd last bit
+    //n&(1<<3) => getting 4th last bit
 
     int num=4; //0100
 
