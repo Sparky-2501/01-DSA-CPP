@@ -19,8 +19,8 @@ int main()
     //MSB=>1 negative number
     //MSB=>0 positive number
         int num = 5;
-        cout<< ~num + 1 <<endl; // -5
-        cout<< -(~num) <<endl; // -5
-        cout<< -(num) <<endl; // -5
+        cout<< ~num <<endl; // -6
+        cout<< -(~num) <<endl; // 6
+        
     return 0;
 }

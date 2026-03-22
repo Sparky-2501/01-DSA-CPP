@@ -22,7 +22,6 @@ int main() {
     for a number to be power of 2 it should have only 1 bit set in its binary representation
     1. n & (n-1) should be 0
     2. n & (n-1) should be 0 and n should not be 0 (because 0 is not a power of 2 and it also satisfies the first condition)
-    
 
     2 & 1 = 0010 & 0001 = 0000
     4 & 3 = 0100 & 0011 = 0000
@@ -41,6 +40,5 @@ int main() {
     } else {
         cout << "NO" << endl;
     }
-
     return 0;
 }
