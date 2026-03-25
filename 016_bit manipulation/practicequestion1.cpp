@@ -10,7 +10,7 @@ void clearmethod1(int num, int i, int j)
     cout << num;
 }
 
-void clearmethod1(int num, int i, int j)
+void clearmethod2(int num, int i, int j)
 {
    int a = ~0 << (j + 1); // left part of the number with 0s from j to 0
     int b = (1 << i) - 1; // right part of the number with 0s from i to end
