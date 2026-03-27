@@ -16,6 +16,5 @@ int main() {
         ans = ans ^ x;
     }
     cout<<ans<<endl;
-
     return 0;
 }
