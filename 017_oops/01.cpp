@@ -3,19 +3,25 @@ using namespace std;
 
 class Student{
     public:
+
     //properties
         string name;
         int age;
         int roll_no;
         float marks;
-        float percentage= (marks/500)*100;
-
+        float percentage;
+    
+    //functions
         void display(){
             cout << "Name: " << name << endl;
             cout << "Age: " << age << endl;
             cout << "Roll No: " << roll_no << endl;
-            cout << "percentage: " << percentage << "%" << endl;
         }
+
+        void calculate_percentage(){
+            percentage = (marks/500)*100;
+            cout << "percentage: " << percentage << "%" << endl;
+        }   
 };
 
 int main() {
@@ -26,5 +32,6 @@ int main() {
     s1.marks = 446;
 
     s1.display();
+    s1.calculate_percentage();
     return 0;
 }
