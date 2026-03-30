@@ -35,3 +35,9 @@ int main() {
     s1.calculate_percentage();
     return 0;
 }
+
+
+/*
+1.we create a class with some properties and functions.
+2.create an object inside the main function and assign values to the properties and call the functions to display the values and calculate the percentage.
+*/
