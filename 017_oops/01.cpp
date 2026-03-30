@@ -1,9 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+class Student{
+    public:
+    //properties
+        string name;
+        int age;
+        int roll_no;
+        float marks;
+        float percentage= (marks/500)*100;
+
+        void display(){
+            cout << "Name: " << name << endl;
+            cout << "Age: " << age << endl;
+            cout << "Roll No: " << roll_no << endl;
+            cout << "percentage: " << percentage << "%" << endl;
+        }
+};
+
 int main() {
-    int a;
-    cout << (a^a)<<endl;
-    cout << (a^0)<<endl;
+    Student s1;
+    s1.name = "Alice";
+    s1.age = 20;
+    s1.roll_no = 101;
+    s1.marks = 446;
+
+    s1.display();
     return 0;
 }
