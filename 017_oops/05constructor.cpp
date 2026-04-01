@@ -21,7 +21,7 @@ public:
 
 int main() {
     /* A special method that is automatically called when an object of the class is created
-    used for initialization of objects
+    used for initialization of properties of an object
     
     same name as class 
     doesn't have return type 
