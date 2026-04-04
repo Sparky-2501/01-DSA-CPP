@@ -1,31 +1,40 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Employee {
-private:
-    int id; // private data member, cannot be accessed outside the class    
+class Car
+{
+    string name;
+    string color;
+
 public:
-    Employee() { // default constructor, called when no arguments are passed during object creation
-        id = 0; // initializing id to 0
-    }   
-    Employee(int id) { // parameterized constructor, called when arguments are passed during object creation
-        this->id = id; // using 'this' pointer to refer to the current object's id
+    Car(string n, string c){ 
+        name = n;
+        color = c;
     }
-    void setId(int id) { // public member function to set the value of id
-        this->id = id; // using 'this' pointer to refer to the current object's id
+
+    void start()
+    {
+        cout << "Car Started" << endl;
     }
-    int getId() { // public member function to get the value of id
-        return id; // returning the value of id
+    void stop()
+    {
+        cout << "Car Stopped" << endl;
     }
+
+    string getName(){
+        return name;
+    }
+    string getColor(){
+        return color;
+    }
+
 };
 
-int main() {
-    /* A special method that is automatically called when an object of the class is created
-    used for initialization of properties of an object
-    
-    same name as class 
-    doesn't have return type 
-    only called once at creation of object
-    memory allocation happens when object of the class is created */
+//getter-get value from class ; setter - set value to class 
+int main()
+{
+    Car r1("BMW", "Red");
+    cout << r1.getName() << endl;
+    cout << r1.getColor() << endl;
     return 0;
 }
