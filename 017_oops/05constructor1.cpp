@@ -7,7 +7,7 @@ class Car
     string color;
 
 public:
-    Car(string n, string c){ 
+    Car(string n, string c){ //constructor with parameters
         name = n;
         color = c;
     }
