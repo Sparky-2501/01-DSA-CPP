@@ -36,5 +36,8 @@ int main()
     doesn't have return type
     only called once at creation of object
     memory allocation happens when object of the class is created */
+
+
+    // same name multiple constructors => constructor overloading
     return 0;
 }
