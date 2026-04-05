@@ -24,5 +24,7 @@ class User{
 
 int main() {
     User u1(1);
+    u1.username = "Alice";
+    cout << u1.username << endl;
     return 0;
 }
