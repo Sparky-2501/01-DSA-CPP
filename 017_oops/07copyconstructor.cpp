@@ -4,10 +4,10 @@ using namespace std;
 class A {
     public:
         int x;
-        A(int x) {
+    A(int x) {
             this->x = x;
         }
-        A(A &a) {
+    A(A &a) {
             this->x = a.x;
         }
     };
