@@ -19,9 +19,9 @@ public:
     {
         x = a.x;
         y = a.y;
-        //ptr = a.ptr; // shallow copy, it copies the value of the pointer, but it does not copy the object pointed to by the pointer
-        
-        ptr = new int; // dynamic memory allocation for the new pointer
+        // ptr = a.ptr; // shallow copy, it copies the value of the pointer, but it does not copy the object pointed to by the pointer
+
+        ptr = new int;   // dynamic memory allocation for the new pointer
         *ptr = *(a.ptr); // deep copy, it copies the value of the object pointed to by the pointer
     }
 };
