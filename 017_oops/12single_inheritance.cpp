@@ -6,6 +6,7 @@ class Parent
 public:
     void display()
     {
+        int a = 10;
         cout << "I am a parent class" << endl;
     }
 };
@@ -14,6 +15,7 @@ class Child : public Parent
 public:
     void displayChild()
     {
+        cout << a * a;
         cout << "I am a child class" << endl;
     }
 };
