@@ -4,9 +4,11 @@ using namespace std;
 class Parent
 {
 public:
+    int a = 10;
+public:
     void display()
     {
-        int a = 10;
+        
         cout << "I am a parent class" << endl;
     }
 };
