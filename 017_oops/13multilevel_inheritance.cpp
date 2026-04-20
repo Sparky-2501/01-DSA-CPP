@@ -4,8 +4,10 @@ using namespace std;
 class GrandParent
 {
 public:
+int a=10;
     GrandParent()
     {
+
         cout << "GrandParent constructor called" << endl;
     }
 };  
@@ -23,7 +25,7 @@ class Child : public Parent
 public:
     Child()
     {
-        int a=20;
+        cout << a << endl; // Accessing 'a' from GrandParent class
         cout << "Child constructor called" << endl;
     }
 };
