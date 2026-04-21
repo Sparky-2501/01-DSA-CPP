@@ -28,6 +28,15 @@ int main()
     // 3. Multilevel Inheritance: A derived class inherits from a base class, which in turn inherits from another base class.
     // 4. Hierarchical Inheritance: Multiple derived classes inherit from a single base class.
     // 5. Hybrid Inheritance: A combination of two or more types of inheritance.
+/*
+Base member      |     Type of inheritance
+ access specifier| public    |   protected   |   private
+ __________________________________________________________
+Public           |public    |   protected   |   private
+Protected        |protected |   protected   |   private
+private          |private    |   private   |   private
+*/
+
     child c;
     c.displayPassword();
     return 0;
