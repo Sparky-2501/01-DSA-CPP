@@ -35,6 +35,16 @@ Base member      |     Type of inheritance
 Public           |public    |   protected   |   private
 Protected        |protected |   protected   |   private
 private          |private    |   private   |   private
+
+
+class child : public Parent
+{
+    // public inheritance
+    // public members of Parent become public in child
+    // protected members of Parent become protected in child
+    // private members of Parent are not accessible in child
+
+};
 */
 
     child c;
