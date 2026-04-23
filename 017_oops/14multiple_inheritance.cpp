@@ -11,6 +11,7 @@ int a = 10;
         cout << "Base1 display function" << endl;
     }
 };
+
 class Base2{
     public:
     int b=20;
@@ -20,7 +21,6 @@ class Base2{
     void display() {
         cout << "Base2 display function" << endl;
     }
-
 };
 
 class Derived : public Base1, public Base2 {
@@ -28,12 +28,10 @@ public:
     Derived() {
         cout << a + b << endl;
     }
-
     void display() {
         cout << "Derived display function" << endl;
     }
 };
-
 
 int main() {
     // Multiple Inheritance: A class can inherit from more than one base class.
