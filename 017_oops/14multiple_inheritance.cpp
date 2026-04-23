@@ -38,6 +38,8 @@ public:
 int main() {
     // Multiple Inheritance: A class can inherit from more than one base class.
     Derived d;
-    d.display(); // Calls Base1's display function
+    d.Base1::display(); // calls Base1 version
+    d.Base2::display(); // calls Base2 version
+    d.display(); // Calls Derived's display function    
     return 0;
 }
