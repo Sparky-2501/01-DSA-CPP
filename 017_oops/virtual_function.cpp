@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Base
+{
+public:
+    virtual void display()
+    {
+        cout << "Base class display function" << endl;
+    }
+};
+class Derived : public Base
+{
+public:
+    void display()
+    {
+        cout << "Derived class display function" << endl;
+    }
+};
+
+int main()
+{
+    Base *ptr;
+    Derived d;
+    ptr = &d;
+    ptr->display(); // Calls Derived class display function due to virtual function
+    return 0;
+}
