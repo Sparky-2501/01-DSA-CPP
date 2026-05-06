@@ -14,6 +14,8 @@ public:    void display() {
 };
 
 int main() {
+    //overriding - parent and child having ame function name and same signature
+    //parent fucntion is overridden by child function 
     Derived d;
     d.display();  // Calls Derived class display function
     return 0;

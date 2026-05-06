@@ -1,17 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Base
-{
+class Base{
 public:
+//compulsory to use virtual keyword in base class function to achieve runtime polymorphism
+
     virtual void display()
     {
         cout << "Base class display function" << endl;
     }
 };
-class Derived : public Base
-{
+
+class Derived : public Base{
 public:
+//compulsory to use void display 
     void display()
     {
         cout << "Derived class display function" << endl;
