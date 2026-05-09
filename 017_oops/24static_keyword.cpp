@@ -1,22 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
- class Counter {
-    public:
-        static int count; // Static variable declaration
-        Counter() {
-            count++; // Increment count for each object created
-        }
+ void Counter() {
+        int count=0; // Instance variable
+        static int s_count=0; // Static variable
+        count++;
+        s_count++;
+        cout<<"Count: " << count << endl;
+        cout<<"Static Count: " << s_count << endl;
     };
-
-int Counter::count = 0; // Definition of static variable
 
 int main() {
     // Static variables are shared among all instances of a class
    // They are initialized only once and retain their value across all instances
    // In this example, the static variable 'count' will keep track of the number of Counter objects created
-    Counter c1;
-    Counter c2;
-    cout << "Count: " << Counter::count << endl;
+    Counter();
+    Counter();
     return 0;
 }
