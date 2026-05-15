@@ -1,4 +1,5 @@
-//Question2:CreateaclassBankAccountwithprivateattributesaccountNumberandbalance.Implementpublicmethodsdeposit(),withdraw(),andgetBalance()tomanagetheaccount.
+//Question2:Create a class BankAccount with private attributes accountNumber and balance.
+//Implement public methods deposit(), withdraw(), and get Balance() to manage the account.
 #include <bits/stdc++.h>
 using namespace std;
 
