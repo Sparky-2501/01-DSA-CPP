@@ -1,23 +1,36 @@
+//Question2:CreateaclassBankAccountwithprivateattributesaccountNumberandbalance.Implementpublicmethodsdeposit(),withdraw(),andgetBalance()tomanagetheaccount.
 #include <bits/stdc++.h>
 using namespace std;
 
-class parent {
-public:
-    void display() {
-        cout << "I am a parent class" << endl;
-    }
-};
+class BankAccount {
+private:
+    string accountNumber;
+    double balance;
 
-class child : public parent {
 public:
-    void display() {
-        cout << "I am a child class" << endl;
+    BankAccount(string accNum, double initialBalance) {
+        accountNumber = accNum;
+        balance = initialBalance;
+    }
+
+    void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        }
+    }
+
+    double getBalance() {
+        return balance;
     }
 };
 
 int main() {
-    parent* p = new child();
-    p->display();
-    delete p;
+    
     return 0;
 }
