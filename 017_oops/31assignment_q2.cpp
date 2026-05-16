@@ -32,6 +32,24 @@ public:
 };
 
 int main() {
+    cout << "Enter account number: ";
+    string accNum;
+    cin >> accNum;
+    cout << "Enter initial balance: ";  
+    double initialBalance;
+    cin >> initialBalance;
+    BankAccount account(accNum, initialBalance);
+    cout << "Current balance: " << account.getBalance() << endl;
+    cout << "Enter amount to deposit: ";
+    double depositAmount;
+    cin >> depositAmount;
+    account.deposit(depositAmount);
+    cout << "Updated balance: " << account.getBalance() << endl;
+    cout << "Enter amount to withdraw: ";       
+    double withdrawAmount;
+    cin >> withdrawAmount;
+    account.withdraw(withdrawAmount);
+    cout << "Updated balance: " << account.getBalance() << endl;
     
     return 0;
 }
