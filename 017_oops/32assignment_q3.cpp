@@ -21,6 +21,7 @@ private:
     string studentID;
 
 public:
+//                           Child(intx):Parent(x)
     Student(string n, int a, string id) : Person(n, a) {
         studentID = id;
     }
