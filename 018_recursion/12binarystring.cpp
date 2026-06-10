@@ -1,6 +1,5 @@
 // Binary String
-#include <iostream>
-#include <string>
+#include <bits/stdc++>
 using namespace std;
 
 void printBinaryString(int n, string output) {
