@@ -2,6 +2,11 @@
 using namespace std;
 
 // Merge Sort Algorithm : time complexity O(nlogn) and space complexity O(n)
+//steps:
+// 1. Divide the array into two halves
+// 2. Recursively sort the two halves
+// 3. Merge the two sorted halves
+
 void merge(vector<int> &arr, int left, int mid, int right) {
     vector<int> temp(right - left + 1);
     int i = left, j = mid + 1, k = 0;
