@@ -9,7 +9,6 @@ using namespace std;
 //   newString: the string being built without duplicates
 //   st: an unordered set to keep track of characters that have already been added to newString
 
-
 void removeDuplicates(string s, int index, string newString, unordered_set<char> &st) {
     //base case
     if (index == s.length()) {
