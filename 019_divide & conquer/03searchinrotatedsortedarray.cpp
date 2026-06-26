@@ -2,6 +2,8 @@
 using namespace std;
 
 // This function searches for a target value in a rotated sorted array and returns its index if found, otherwise returns -1.
+// 2 pointers left and right for binary search 
+//mid calculated as left + (right - left) / 2 to avoid overflow
 int searchInRotatedSortedArray(vector<int>& nums, int target) {
     int left = 0, right = nums.size() - 1;
 
