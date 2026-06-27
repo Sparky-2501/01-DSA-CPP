@@ -4,6 +4,9 @@ using namespace std;
 // This function searches for a target value in a rotated sorted array and returns its index if found, otherwise returns -1.
 // 2 pointers left and right for binary search 
 //mid calculated as left + (right - left) / 2 to avoid overflow
+// If the mid element is equal to the target, return mid
+// If the left half is sorted, check if the target lies within that range. If it does, move the right pointer to mid - 1; otherwise, move the left pointer to mid + 1.
+// If the right half is sorted, check if the target lies within that range. If it does, move the left pointer to mid + 1; otherwise, move the right pointer to mid - 1.
 int searchInRotatedSortedArray(vector<int>& nums, int target) {
     int left = 0, right = nums.size() - 1;
 
