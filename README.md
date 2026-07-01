@@ -1,6 +1,16 @@
-# C++ DSA Daily Practice
+<div align="center">
 
-This repository contains my daily DSA practice in C++ from 1 january 2026.
+# 📘 C++ Data Structures & Algorithms
 
-## Goal
-Consistent problem solving for interview preparation.
+### Building strong problem-solving skills through consistent daily practice.
+
+</div>
+
+---
+
+Starting from **January 1, 2026**, I committed to learning **Data Structures and Algorithms in C++** every day.
+
+This repository documents my structured learning journey, covering concepts from **basic programming** to **advanced algorithms**.
+
+> *"Consistency beats intensity. Small progress every day leads to big results."*
+
