@@ -38,7 +38,7 @@ int searchInRotatedSortedArray(vector<int>& nums, int target) {
     return -1; // Target not found
 }
 
-//main function
+//main function call
 int main() {
     int n, target;
     cin >> n;
