@@ -2,7 +2,6 @@
 using namespace std;
 
 //printing 1 to n
-
 void Order(int n){
     if(n==0) return;
     Order(n-1);
