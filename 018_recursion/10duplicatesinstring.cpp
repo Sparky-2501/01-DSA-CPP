@@ -2,30 +2,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to remove duplicates from a string using recursion
-// Parameters:
-//   s: the input string
-//   index: the current index in the string
-//   newString: the string being built without duplicates
-//   st: an unordered set to keep track of characters that have already been added to newString
-
-void removeDuplicates(string s, int index, string newString, unordered_set<char> &st) {
+string removeDuplicates(string s, int i, string newString, unordered_set<char> &st) {
     //base case
-    if (index == s.length()) {
-        cout << newString << endl;
-        return;
+    if (i == s.length()) {
+        return newString; 
     }
     //rec case
-    char currentChar = s[index];
-    if (st.find(currentChar) != st.end()) {
+    char currentChar = s[i];
+    if (st.find(currentChar) != st.end()) {    // check whether the character is already present in the set
         //duplicate character
-        removeDuplicates(s, index + 1, newString, st);
+        removeDuplicates(s, i + 1, newString, st);
     } else {
         //non duplicate character
         newString.push_back(currentChar);
         st.insert(currentChar);
-        removeDuplicates(s, index + 1, newString, st);
+        removeDuplicates(s, i + 1, newString, st);
     }
+
+    
 }
 
 int main() {
