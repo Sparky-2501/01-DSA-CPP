@@ -3,7 +3,7 @@
 using namespace std;
 
 int firstOccurrence(int arr[], int n, int x, int i) {
-    if (i == n) {
+    if (i == n) {   // full traverse last tk gya exist hi nhi karta 
         return -1;
     }
     if (arr[i] == x) {

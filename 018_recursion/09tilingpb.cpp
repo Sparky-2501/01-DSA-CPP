@@ -11,15 +11,16 @@ using namespace std;
     // dp[n] = dp[n-1] + dp[n-2] for n > 1
     // The time complexity of this solution is O(n) and the space complexity is O(n) due to the dp array.
 
+    int tilingWays(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        
+        return tilingWays(n - 1) + tilingWays(n - 2);
+    }
 int main() {
     int n;
     cin >> n;
-    int dp[n + 1];
-    dp[0] = 1;
-    dp[1] = 1;
-    for (int i = 2; i <= n; i++) {
-        dp[i] = dp[i - 1] + dp[i - 2];
-    }
-    cout << dp[n] << endl;
+    cout << tilingWays(n) << endl;
     return 0;
 }
