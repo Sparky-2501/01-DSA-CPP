@@ -1,4 +1,4 @@
-//friend pairing problem with recursion
+//friend pairing problem with recursion : given number of friends n, find the number of ways in which they can remain single or can be paired up. Each friend can be paired with any other friend only once.
 #include <bits/stdc++.h>
 using namespace std;    
 

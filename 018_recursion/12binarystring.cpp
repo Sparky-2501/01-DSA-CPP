@@ -1,30 +1,29 @@
-// Binary String
+// Binary String : binary string of size n without any consecutive 1's
+
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to generate all binary strings of length n
-// The function uses recursion to build the binary strings
-// Parameters:
-//   n: the number of bits
-//   output: the current binary string being built
-// Base case: if n is 0, print the output string
-// Recursive case: append '0' and '1' to the output string and call the function with n-1
-// Time complexity: O(2^n) since there are 2^n binary strings of length n
-// Space complexity: O(n) for the recursion stack
+void binaryString(int n , int lastDigit , string output){
 
-void printBinaryString(int n, string output) {
-    if (n == 0) {
+    if(n==0){
         cout << output << endl;
         return;
     }
-    printBinaryString(n - 1, output + "0");
-    printBinaryString(n - 1, output + "1");
+
+    if(lastDigit == 0){
+        binaryString(n-1,0,output+"0");
+        binaryString(n-1,1,output+"1");
+    }
+    else{
+        binaryString(n-1,0,output+"0");
+    }
 }
 
-int main() {
+int main(){
     int n;
-    cout << "Enter the number of bits: ";
     cin >> n;
-    printBinaryString(n, "");
-    return 0;
+    int ans="";
+    binaryString(n,0,ans);
+    return 0;   
 }
+
