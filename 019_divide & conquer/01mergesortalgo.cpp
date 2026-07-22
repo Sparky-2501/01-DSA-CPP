@@ -21,7 +21,7 @@ void merge(vector<int> &arr, int left, int mid, int right) {
         temp[k++] = arr[i++];
     }
     while (j <= right) {
-        temp[k++] = arr[j++];
+        temp[k++] = arr[j++];   
     }
     for (int i = left; i <= right; i++) {
         arr[i] = temp[i - left];
