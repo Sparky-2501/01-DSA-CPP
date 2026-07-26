@@ -10,8 +10,8 @@ using namespace std;
 //all smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot
 
 int partition(int arr[], int low, int high) {
-    int pivot = arr[high];
-    int i = (low - 1);
+    int pivot = arr[high]; 
+    int i = low - 1;
 
     for (int j = low; j <= high - 1; j++) {
         if (arr[j] < pivot) {
@@ -20,7 +20,7 @@ int partition(int arr[], int low, int high) {
         }
     }
     swap(arr[i + 1], arr[high]);
-    return (i + 1);
+    return i;
 }
 
 void quickSort(int arr[], int low, int high) {
