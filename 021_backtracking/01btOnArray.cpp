@@ -12,7 +12,7 @@ void printArr(int arr[], int n){
 
 void changeArr(int arr[], int n , int i){
     if(i == n){
-        printArr(arr,5);
+        printArr(arr,5); //1 2 3 4 5
         return ;
     }
     arr[i] =i+1;
