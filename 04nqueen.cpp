@@ -10,7 +10,7 @@ void printBoard(vector<vector<char>> board){
         }
         cout << endl;
     }
-    cout << "-------------------------------" << endl;
+    cout << "---------------------------------" << endl;
 }
 
 bool isSafe(vector<vector<char>> board, int row, int col){
