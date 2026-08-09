@@ -14,3 +14,8 @@ int main() {
     cout << "Total number of ways to reach the destination: " << count << endl;
     return 0;
 }
+/*
+_|_|_
+_|_|_
+_|_|_
+*/ 
