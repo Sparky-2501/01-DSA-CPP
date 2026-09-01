@@ -46,7 +46,11 @@ void solve(int row, int col, vector<vector<int>>& maze, vector<vector<int>>& vis
 }
 
 int main() {
-
+    /*
+    Hint:To track which cell has or not been visited, create a NxN vector called visited.
+    This vector will be initialized with false values for all cells & make the value for a particular cell to true 
+    when you have visited it.
+    */
     int n;
     cin >> n;
 
