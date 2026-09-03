@@ -47,12 +47,14 @@ class List{
         cout << "Key not found: " << key << endl;
     }
 
-    bool recursiveSearch(Node* node, int key) {
+    void recursiveSearch(Node* node, int key) {
         if(node == NULL) {
-            return false;
+            cout << "Key not found: " << key << endl;
+            return;
         }
         if(node->data == key) {
-            return true;
+            cout << "Key found: " << key << endl;
+            return;
         }
         return recursiveSearch(node->next, key);
     }
@@ -68,6 +70,12 @@ class List{
 };
 
 int main() {
-    
+    List ll;
+    ll.insert(10);
+    ll.insert(20);
+    ll.insert(30);
+    ll.iterativeSearch(20);
+    ll.iterativeSearch(40);
+    ll.recursiveSearch(ll.head, 30);
     return 0;
 }
