@@ -12,6 +12,14 @@ Class Node {
         data = val;
         next = NULL;
     }
+
+    ~Node() {
+        cout << "~Node" << val << endl;
+        if(next != NULL){
+            delete next;
+            next = NULL;
+        }
+    }
 };
 
 class List {
@@ -23,6 +31,14 @@ class List {
     List() {
         head = NULL;
         tail = NULL;
+    }
+
+    ~List(){
+        cout << "~List" << endl;
+        if(head != NULL){
+            delete head;
+            head = NULL;
+        }
     }
 
     void push_front(int val) {
@@ -46,6 +62,7 @@ class List {
         cout << endl;
     }
 
+
     void pop_front(){
         if(head == NULL){
             cout << "List is empty" << endl;
@@ -55,20 +72,39 @@ class List {
         head = head->next;
         delete temp;
     }
-};
 
-   void pop_back(){
-    
+    void pop_back(){
+        if(head == NULL){
+            cout << "List is empty" << endl;
+            return;
+        }
+        if(head->next == NULL){
+            delete head;
+            head = NULL;
+            tail = NULL;
+            return;
+        }
+        Node* temp = head;
+        while(temp->next != tail){
+            temp = temp->next;
+        }
+        delete tail;
+        tail = temp;
+        tail->next = NULL;
    }
+};
 
 
 int main() {
     List ll;
 
-    ll.push_back(1);
-    ll.push_back(2);
+    ll.push_front(3);
+    ll.push_front(2);
+    ll.push_front(1);
     ll.display();
     ll.pop_front();
+    ll.display();
+    ll.pop_back();
     ll.display();
     return 0;
 }
