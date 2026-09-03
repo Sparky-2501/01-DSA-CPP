@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//push front push back display
+//push_front push_back push_middle display
 class Node {
 public:
     int data;
@@ -52,6 +52,10 @@ public:
         Node* temp = head;
 
         for(int i = 1; i < pos; i++){
+            if(temp == NULL){
+                cout << "Position out of bounds" << endl;
+                return;
+            }
             temp = temp->next;
         }
         newNode->next = temp->next;
