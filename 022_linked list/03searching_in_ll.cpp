@@ -35,16 +35,17 @@ class List{
         }
     }
 
-   void iterativeSearch(int key) {
+   int iterativeSearch(int key) {
         Node* temp = head;
         while(temp != NULL) {
             if(temp->data == key) {
                 cout << "Key found: " << key << endl;
-                return;
+                return 1;
             }
             temp = temp->next;
         }
         cout << "Key not found: " << key << endl;
+        return 0;
     }
 
     void recursiveSearch(Node* node, int key) {
