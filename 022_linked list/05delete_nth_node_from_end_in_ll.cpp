@@ -37,7 +37,18 @@ class List{
         cout << endl;
     }
 
-    void deleteNthFromEnd(int n){
+    int getSize(){
+        int size=0;
+        Node* temp = head;
+        while(temp !=NULL){
+            temp = temp-> next;
+            size++;
+        }
+
+        return size; 
+    }
+
+    void deleteNthFromEnd(int n){    //T.C:- O(N)   S.C:- O(1)
         Node* prev = head;
 
         for(int i = 1; i < size - n; i++){  // n-1 is position from which we want to delete the node n 
