@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Node(){
+class Node{
     public:
     int data;
     Node* next;
@@ -12,7 +12,7 @@ class Node(){
     }
 };
 
-class List(){
+class List{
     public:
     Node* head = NULL;
     Node* tail = NULL;
