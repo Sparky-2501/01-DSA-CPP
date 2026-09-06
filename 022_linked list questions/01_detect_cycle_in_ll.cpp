@@ -29,6 +29,22 @@ class List{
         }
     }
 
+    void join(int n){
+        Node* temp = head;
+
+        while(temp->next !=NULL){
+            temp = temp->next;
+        }
+
+        Node* middle=head;
+        while(middle-> data != n){
+            middle = middle->next;
+        }
+
+        temp->next=middle;
+
+    }
+
     void display(){
         Node* temp = head;
         while(temp != NULL){
@@ -58,6 +74,14 @@ class List{
 class
 
 int main() {
-    
+    List ll;
+    ll.insert(1);
+    ll.insert(2);
+    ll.insert(3);
+    ll.insert(4);
+    ll.insert(5);
+    ll.insert(6);
+    ll.insert(7);
+    ll.join(3);
     return 0;
 }
