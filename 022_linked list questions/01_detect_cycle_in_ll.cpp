@@ -29,22 +29,6 @@ class List{
         }
     }
 
-    void join(int n){
-        Node* temp = head;
-
-        while(temp->next !=NULL){
-            temp = temp->next;
-        }
-
-        Node* middle=head;
-        while(middle-> data != n){
-            middle = middle->next;
-        }
-
-        temp->next=middle;
-
-    }
-
     void display(){
         Node* temp = head;
         while(temp != NULL){

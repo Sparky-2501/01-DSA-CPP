@@ -75,5 +75,6 @@ int main() {
     ll.insert(4);
     ll.tail->next = ll.head->next; // Creating a cycle for testing
     ll.removeCycle();
+    ll.dispplay();
     return 0;
 }
