@@ -10,7 +10,7 @@ int main() {
     ll.push_back(3);
     
     list<int>::iterator itr;
-    for(itr = ll.begin(); itr != ll.end(); ++itr){
+    for(itr = ll.begin(); itr != ll.end(); itr++){
         cout << *itr << " ";
     }
     return 0;
