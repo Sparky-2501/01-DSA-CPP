@@ -63,22 +63,32 @@ Node* reverse(Node* head) {
     return prev;
 }
 
-void assignZigZag(Node* left, Node* right) {
-    Node* temp1;
-    Node* temp2;
+void assignZigZag(Node* head, Node* revRight) {
+    Node* left = head;
+    Node* right = revRight;
+    Node* tail = right;
 
-    while (left != NULL && right != NULL) {
-        temp1 = left->next;
-        temp2 = right->next;
+    while(left != NULL && right != NULL){
+         Node* nextLeft = left->next;
+        Node* nextRight = right->next;
 
         left->next = right;
-        right->next = temp1;
+        right->next = nextLeft;
 
-        left = temp1;
-        right = temp2;
+        tail=right;
+
+
+        left = nextLeft;
+        right = nextRight;
     }
+    if(right != NULL){
+        tail->next = right;
+    }
+
+    return;
 }
 
+    
 void zigZag(Node* head) {
     Node* right = splitAtMid(head);
     Node* revRight = reverse(right);
@@ -102,11 +112,6 @@ int main() {
     ll.insert(3);
     ll.insert(4);
     ll.insert(5);
-    // Node* head = new Node(1);
-    // head->next = new Node(2);
-    // head->next->next = new Node(3);
-    // head->next->next->next = new Node(4);
-    // head->next->next->next->next = new Node(5);
 
     cout << "Before zig-zag:\n";
     printList(ll.head);
