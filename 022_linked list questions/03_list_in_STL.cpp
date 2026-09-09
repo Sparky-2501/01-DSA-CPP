@@ -13,5 +13,7 @@ int main() {
     for(itr = ll.begin(); itr != ll.end(); itr++){
         cout << *itr << " ";
     }
+
+    printList(ll.head);
     return 0;
 }
