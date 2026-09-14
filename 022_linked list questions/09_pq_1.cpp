@@ -94,5 +94,15 @@ public:
 
 int main() {
     List list1, list2;
+    list1.insert(1);
+    list1.insert(2);    
+    list1.insert(3);
+    list1.insert(4);
+    list2.insert(5);
+    list2.insert(6);
+    list2.insert(7);
+    // Creating intersection
+    list1.head->next->next->next = list2.head->next; // 3 -> 6
+    list1.getIntersectionNode(list1, list2);
     return 0;
 }
