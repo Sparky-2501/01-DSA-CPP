@@ -52,9 +52,9 @@ int main() {
     s.push(3);
     s.push(4);
     s.push(5);
-    s.peek();
+    cout << s.peek() << endl;
     s.pop();
-    s.peek();
+    cout << s.peek() << endl;
     s.isEmpty();
     return 0;
 }

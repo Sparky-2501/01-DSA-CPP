@@ -1,18 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 //stack using linked list
-tempelate <class T>
+template <class T>
 class Stack{
     list<T> ll;
 
     public:
     void push(T val){
-        list* newNode;
-        newNode->data = val;
-        newNode->next = head;
-        head = newNode;
+        ll.push_front(val);
     }
-}
+
+    void pop(){
+        if(ll.empty()){
+            cout << "Stack Underflow" << endl;
+            return;
+        }
+        ll.pop_front();
+    }
+
+    T peek(){
+       return ll.front();
+    }
+};
 
 int main() {
     

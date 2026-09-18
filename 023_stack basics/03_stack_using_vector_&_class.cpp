@@ -2,7 +2,7 @@
 using namespace std;
 //stack using vector & class
 
-tempelate <class T>
+template <class T>
 class Stack{
     vector<T> vec;
     public:
