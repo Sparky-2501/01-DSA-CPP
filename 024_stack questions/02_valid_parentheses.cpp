@@ -3,7 +3,6 @@ using namespace std;
 
 bool isValid(string str) {
     stack<char> s;
-
     for (int i = 0; i < str.size(); i++) {
         char ch = str[i];
 
